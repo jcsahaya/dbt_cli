@@ -10,5 +10,5 @@ e.salary, e.department_id, e.manager_id, concat(e1.first_name||' '||e1.last_name
 from employees e
 join employees e1 
 on e.manager_id = e1.employee_id
-where e.salary
-    > (select avg(e1.salary) from employees e1 where e1.department_id = e.department_id)
+where e.salary >
+    (select avg(e1.salary) from employees e1 where e1.department_id = e.department_id)
