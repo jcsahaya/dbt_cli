@@ -1,0 +1,34 @@
+sources:
+  - name: src
+    schema: my_sc
+    database: my_database
+    tables:
+      - name: Incremental_Src_Emp
+        columns:
+          - name: employee_id
+          - name: first_name
+          - name: email
+          - name: phone_number
+      - name: merge_emp
+        columns:
+          - name: employee_id
+          - name: first_name
+          - name: department_id
+          - name: hire_date
+
+  - name: oracle
+    database: my_database
+    schema: my_schema
+    tables:
+      - name: countries
+      - name: cource
+      - name: cumulative_sal
+      - name: customer_data
+      - name: departments
+      - name: employees
+      - name: employees1
+      - name: locations
+      - name: special_char
+      - name: table1
+      - name: teams
+      - name: zipcode
